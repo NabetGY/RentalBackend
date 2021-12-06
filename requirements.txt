@@ -1,0 +1,7 @@
+django==3.2.8
+django-cors-headers==3.10.0
+djangorestframework==3.12.4
+django-environ==0.8.1
+cloudinary==1.26.0
+mercadopago
+gunicorn
