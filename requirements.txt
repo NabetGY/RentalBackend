@@ -6,6 +6,7 @@ cloudinary==1.26.0
 mercadopago
 gunicorn
 dj-database-url
-psycopg2
+psycopg2-binary
 whitenoise
 asgiref
+django-heroku
