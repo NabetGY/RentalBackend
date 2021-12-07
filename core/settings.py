@@ -119,11 +119,11 @@ DATABASES = {
     }
 }
 
-''' import dj_database_url
+import dj_database_url
 
-db_from_env = dj_database_url.config(default='ppostgres://zfrjzubbdxwhbe:131b705fcf5aea1685e838bd0a6bea83ceabcb637879dcbcf59f55985d9eed4b@ec2-34-195-69-118.compute-1.amazonaws.com:5432/d5r70gcseie9d1')
+db_from_env = dj_database_url.config(default='postgres://zfrjzubbdxwhbe:131b705fcf5aea1685e838bd0a6bea83ceabcb637879dcbcf59f55985d9eed4b@ec2-34-195-69-118.compute-1.amazonaws.com:5432/d5r70gcseie9d1')
 DATABASES['default'].update(db_from_env)
- '''
+
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
