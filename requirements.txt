@@ -10,3 +10,4 @@ psycopg2-binary
 whitenoise
 asgiref
 django-heroku
+djangorestframework-simplejwt
