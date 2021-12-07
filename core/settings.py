@@ -108,12 +108,16 @@ WSGI_APPLICATION = 'core.wsgi.application'
 
 import dj_database_url
 
-''' DATABASES['default'] = dj_database_url.config(default='sqlite:///db.sqlite3')
- '''
 DATABASES = {
-    'default': dj_database_url.config(default='sqlite:///db.sqlite3')
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd5r70gcseie9d1',
+        'USER': 'zfrjzubbdxwhbe',
+        'PASSWORD': '131b705fcf5aea1685e838bd0a6bea83ceabcb637879dcbcf59f55985d9eed4b',
+        'HOST': 'ec2-34-195-69-118.compute-1.amazonaws.com',
+        'PORT': '5432',
+    }
 }
-DATABASES['default']['ENGINE'] = 'django.db.backends.sqlite3'
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -140,10 +144,8 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
-
-TIME_ZONE = 'UTC'
-
+LANGUAGE_CODE = 'es'
+TIME_ZONE = 'America/Bogota'
 USE_I18N = True
 
 USE_L10N = True
